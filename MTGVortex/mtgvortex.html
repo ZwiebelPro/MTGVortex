@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTG Vortex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>MTG Vortex</h1>
+  <nav>
+    <button id="searchTab" class="active">Search</button>
+    <button id="metaTab">Meta Cards</button>
+  </nav>
+</header>
+
+<main id="searchView">
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search through the MTG multiverse...">
+    <button id="searchBtn">Search</button>
+  </div>
+  <div id="results"></div>
+</main>
+
+<main id="metaView" class="hidden">
+  <div class="meta-cards">
+    <h2>Meta Cards (Coming Soon)</h2>
+  </div>
+</main>
+
+<!-- Central Card Panel -->
+<div id="cardPanel" class="card-panel hidden">
+  <img id="panelImage" alt="Card Image">
+  <div id="panelLegalities"></div>
+  <button id="closePanel">Close</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
